@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>css layout</title>
+<style>
+* {
+box-sizing:border-box;
+}
+body {
+font-family:Arial,Latin;
+}
+header {
+background-color:tomato;
+color:black;
+padding:20px;
+text-align:center;
+font-size:20px;
+}
+nav {
+background-color:powderblue;
+color:black;
+float:left;
+font-size:35px;
+width:20%;
+height:300px;
+}
+nav ul {
+list-style-type:square;
+}
+article {
+background-color:yellow;
+color:black;
+float:left;
+width:80%;
+padding: 20px;
+height:300px;
+}
+section:after {
+content="";
+display:table;
+clear:both;
+}
+footer {
+background-color:tomato;
+color:black;
+padding:20px;
+font-size:20px;
+text-align:center;
+}
+@media (max-width:600px) {
+nav,article {
+width:100%;
+height:auto;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>food</h1>
+</header>
+<section>
+<nav>
+<ul>
+<li><a href="#">burger</a></li>
+<li><a href="#">noodles</a></li>
+</ul>
+</nav>
+<article>
+<h2><i>burger</i></h2>
+<p>burger are not good for health.and oily too.</p>
+</article>
+</section>
+<footer>
+<p>footer</p>
+</footer>
+</body>
+</html>
+
+
+
+

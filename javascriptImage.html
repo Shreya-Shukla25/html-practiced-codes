@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1>javascript image attribute</h1>
+<script>
+function light(sw) {
+ver pic;
+if(sw==0) {
+pic="C:\Users\Lenovo\Desktop\website\th.jfif"
+} else {
+pic="C:\Users\Lenovo\Desktop\website\wireless-bulbs.gif"
+}
+document.getElementById('myImage').src=pic;
+}
+</script>
+
+<button type="button" onclick="light(1)">light on</button>
+<img src="C:\Users\Lenovo\Desktop\website\th.jfif" id="myImage" width="400" height="400">
+<button type="button" onclick="light(0)">light off</button>
+
+</body>
+</html>
